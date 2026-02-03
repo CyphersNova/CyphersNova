@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | CyphersNova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --insti-blue: #002147;
+            --circuit-teal: #008080;
+            --paper-white: #F5F5F5;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-pattern {
+            background-color: var(--insti-blue);
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .accent-glow {
+            box-shadow: 0 0 20px rgba(0, 128, 128, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#F5F5F5] text-[#002147] dark:bg-slate-900 dark:text-white min-h-screen">
+
+    <nav class="sticky top-0 z-50 glass border-b px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+            <span class="text-[#008080]">Cyphers</span>Nova
+        </div>
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="index.html" class="hover:text-[#008080] transition">Gallery</a>
+            <a href="#" class="text-[#008080]">About</a>
+            <a href="#" class="hover:text-[#008080] transition">Labs</a>
+        </div>
+        <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">🌓</button>
+    </nav>
+
+    <header class="hero-pattern py-20 px-6 text-center text-white">
+        <span class="uppercase tracking-widest text-sm font-bold text-[#008080] mb-4 block">Our Origin Story</span>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Fostering Innovation <br> at the Heart of IIT Madras</h1>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-12">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="glass p-8 rounded-3xl text-center accent-glow">
+                <div class="text-4xl font-bold text-[#008080] mb-2">500+</div>
+                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Projects Launched</div>
+            </div>
+            <div class="glass p-8 rounded-3xl text-center accent-glow">
+                <div class="text-4xl font-bold text-[#008080] mb-2">12k</div>
+                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Community Members</div>
+            </div>
+            <div class="glass p-8 rounded-3xl text-center accent-glow">
+                <div class="text-4xl font-bold text-[#008080] mb-2">45+</div>
+                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Faculty Mentors</div>
+            </div>
+        </div>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Bridging the Gap Between <span class="text-[#008080]">Theory & Prototype</span></h2>
+                <div class="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="glass aspect-video rounded-3xl border-2 border-dashed border-[#008080]/30 flex items-center justify-center text-[#008080] font-mono">
+                [Space for Campus Lab Photography]
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h3 class="text-center text-2xl font-bold mb-12">The Cypher Values</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Open Collaboration</h4>
+                    <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Iterative Design</h4>
+                    <p class="text-sm text-gray-500">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Insti Integrity</h4>
+                    <p class="text-sm text-gray-500">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Radical Impact</h4>
+                    <p class="text-sm text-gray-500">Excepteur sint occaecat cupidatat non proident sunt in culpa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#002147] py-12 px-6 text-center text-white/60 text-sm">
+        <p>© 2024 CyphersNova • Indian Institute of Technology Madras</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyphersNova | IIT Madras Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --insti-blue: #002147;
+            --circuit-teal: #008080;
+            --paper-white: #F5F5F5;
+        }
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .interdisciplinary-glow {
+            box-shadow: 0 0 15px rgba(0, 128, 128, 0.4);
+            border: 2px solid var(--circuit-teal);
+        }
+
+        .hero-pattern {
+            background-color: var(--insti-blue);
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        @keyframes pulse-cv {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .exporting { animation: pulse-cv 1s infinite; }
+    </style>
+</head>
+<body class="bg-[#F5F5F5] text-[#002147] dark:bg-slate-900 dark:text-white min-h-screen">
+
+    <nav class="sticky top-0 z-50 glass border-b px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+            <span class="text-[#008080]">Cyphers</span>Nova
+        </div>
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="#" class="hover:text-[#008080] transition">Gallery</a>
+            <a href="#" class="hover:text-[#008080] transition">Collab</a>
+            <a href="#" class="hover:text-[#008080] transition">Labs</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                🌓
+            </button>
+            <button class="bg-[#002147] text-white dark:bg-[#008080] px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition">
+                Post Project
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-pattern py-24 px-6 text-center text-white">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Where Insti Ideas <br><span class="text-[#008080]">Turn Into Impact</span></h1>
+        <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">The premier mini-project portfolio hub for IIT Madras. Build your legacy, find your team, and impress the faculty.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <button class="bg-[#008080] px-8 py-4 rounded-xl font-bold hover:scale-105 transition shadow-lg">Start a Project</button>
+            <button class="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition">Browse the Gallery</button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
+        <aside class="lg:col-span-1 space-y-8">
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="font-bold mb-4">Teammate Matcher</h3>
+                <label class="flex items-center cursor-pointer">
+                    <div class="relative">
+                        <input type="checkbox" id="collabFilter" class="sr-only">
+                        <div class="block bg-gray-300 dark:bg-gray-700 w-14 h-8 rounded-full"></div>
+                        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                    </div>
+                    <div class="ml-3 font-medium">Looking for team</div>
+                </label>
+            </div>
+
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 flex items-center gap-2">
+                    <span>📡</span> Live Feed
+                </h3>
+                <ul class="text-sm space-y-4">
+                    <li class="border-l-2 border-[#008080] pl-3">
+                        <p class="font-semibold">Smart Irrigation System</p>
+                        <p class="text-gray-500 text-xs">Looking for IoT dev • 2m ago</p>
+                    </li>
+                    <li class="border-l-2 border-gray-300 pl-3">
+                        <p class="font-semibold">New Forum Post</p>
+                        <p class="text-gray-500 text-xs">React Native help needed • 1h ago</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="font-bold mb-4">Insti Resources</h3>
+                <div class="grid grid-cols-1 gap-2 text-sm font-medium">
+                    <a href="#" class="p-2 hover:bg-[#008080]/10 rounded-md transition flex justify-between">CWS Lab <span>↗</span></a>
+                    <a href="#" class="p-2 hover:bg-[#008080]/10 rounded-md transition flex justify-between">3D Printing <span>↗</span></a>
+                    <a href="#" class="p-2 hover:bg-[#008080]/10 rounded-md transition flex justify-between">CFI Facility <span>↗</span></a>
+                </div>
+            </div>
+        </aside>
+
+        <section class="lg:col-span-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="projectGrid">
+                
+                <div class="glass p-6 rounded-2xl transition hover:-translate-y-2 interdisciplinary-glow group" data-collab="true">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-[#008080] text-white text-[10px] px-2 py-1 rounded-full font-bold uppercase">Interdisciplinary</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-[10px] px-2 py-1 rounded-full font-bold">Prototype</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-[#008080] transition">Autonomous Campus Delivery Bot</h2>
+                    <p class="text-sm text-gray-500 mb-4">Robotics + Logistics project for Hostel Zone delivery optimization.</p>
+                    <div class="flex gap-2 mb-6">
+                        <span class="text-xs font-mono bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">#Robotics</span>
+                        <span class="text-xs font-mono bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">#ROS2</span>
+                    </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-green-500 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">+2</div>
+                        </div>
+                        <button onclick="exportCV(this)" class="text-xs font-bold text-[#008080] flex items-center gap-1 hover:underline">
+                            <span>📄</span> Export to CV
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass p-6 rounded-2xl transition hover:-translate-y-2" data-collab="false">
+                    <div class="flex justify-between items-start mb-4">
+                        <span></span>
+                        <span class="bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-full font-bold">Complete</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-[#008080] transition">Blockchain Voting System</h2>
+                    <p class="text-sm text-gray-500 mb-4">Secure, transparent voting architecture for Student Council elections.</p>
+                    <div class="flex gap-2 mb-6">
+                        <span class="text-xs font-mono bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">#Web3</span>
+                        <span class="text-xs font-mono bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">#Solidity</span>
+                    </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <span class="text-xs text-gray-400">By: Aryan Sharma (EE)</span>
+                        <button onclick="exportCV(this)" class="text-xs font-bold text-[#008080] flex items-center gap-1 hover:underline">
+                            <span>📄</span> Export to CV
+                        </button>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 glass p-8 rounded-3xl border-dashed border-2 border-[#008080]/30">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-1">Book Peer Office Hours</h3>
+                            <p class="text-gray-500">Stuck on a bug? Book a 15-min slot with a mentor.</p>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2">
+                            <div class="bg-white dark:bg-gray-800 p-3 rounded-lg text-center cursor-pointer hover:bg-[#008080] hover:text-white transition">
+                                <p class="text-[10px] uppercase opacity-60">Mon</p>
+                                <p class="font-bold">04</p>
+                            </div>
+                            <div class="bg-[#008080] p-3 rounded-lg text-center text-white cursor-pointer shadow-lg shadow-[#008080]/40">
+                                <p class="text-[10px] uppercase opacity-80">Tue</p>
+                                <p class="font-bold">05</p>
+                            </div>
+                            <div class="bg-white dark:bg-gray-800 p-3 rounded-lg text-center cursor-pointer hover:bg-[#008080] hover:text-white transition">
+                                <p class="text-[10px] uppercase opacity-60">Wed</p>
+                                <p class="font-bold">06</p>
+                            </div>
+                            <div class="bg-white dark:bg-gray-800 p-3 rounded-lg text-center cursor-pointer hover:bg-[#008080] hover:text-white transition">
+                                <p class="text-[10px] uppercase opacity-60">Thu</p>
+                                <p class="font-bold">07</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+
+        // Filter Logic
+        const collabFilter = document.getElementById('collabFilter');
+        const cards = document.querySelectorAll('[data-collab]');
+
+        collabFilter.addEventListener('change', () => {
+            const isChecked = collabFilter.checked;
+            cards.forEach(card => {
+                if (isChecked) {
+                    card.style.display = card.dataset.collab === 'true' ? 'block' : 'none';
+                } else {
+                    card.style.display = 'block';
+                }
+            });
+        });
+
+        // Export CV Animation
+        function exportCV(btn) {
+            const originalText = btn.innerHTML;
+            btn.classList.add('exporting');
+            btn.innerHTML = 'Formatting for Resume...';
+            
+            setTimeout(() => {
+                btn.classList.remove('exporting');
+                btn.innerHTML = '✅ Saved to Downloads';
+                setTimeout(() => { btn.innerHTML = originalText; }, 2000);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
