@@ -35,6 +35,15 @@
         .accent-glow {
             box-shadow: 0 0 20px rgba(0, 128, 128, 0.2);
         }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 128, 128, 0.15);
+        }
     </style>
 </head>
 <body class="bg-[#F5F5F5] text-[#002147] dark:bg-slate-900 dark:text-white min-h-screen">
@@ -52,72 +61,289 @@
     </nav>
 
     <header class="hero-pattern py-20 px-6 text-center text-white">
-        <span class="uppercase tracking-widest text-sm font-bold text-[#008080] mb-4 block">Our Origin Story</span>
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Fostering Innovation <br> at the Heart of IIT Madras</h1>
+        <span class="uppercase tracking-widest text-sm font-bold text-[#008080] mb-4 block">Who We Are</span>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Come Curious. Choose a Project. <br> Stay Consistent.</h1>
         <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            And leave with work that you're proud of! ✨
         </p>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 -mt-12">
         
+        <!-- Mission Statement Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <div class="glass p-8 rounded-3xl text-center accent-glow">
-                <div class="text-4xl font-bold text-[#008080] mb-2">500+</div>
-                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Projects Launched</div>
+                <div class="text-4xl mb-3">🚀</div>
+                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Build Real Projects</div>
             </div>
             <div class="glass p-8 rounded-3xl text-center accent-glow">
-                <div class="text-4xl font-bold text-[#008080] mb-2">12k</div>
-                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Community Members</div>
+                <div class="text-4xl mb-3">🤝</div>
+                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Grow Your Network</div>
             </div>
             <div class="glass p-8 rounded-3xl text-center accent-glow">
-                <div class="text-4xl font-bold text-[#008080] mb-2">45+</div>
-                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Faculty Mentors</div>
+                <div class="text-4xl mb-3">💼</div>
+                <div class="text-sm font-semibold uppercase tracking-tight opacity-60">Level Up Your Resume</div>
             </div>
         </div>
 
+        <!-- Who We Are Section -->
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-                <h2 class="text-3xl font-bold mb-6">Bridging the Gap Between <span class="text-[#008080]">Theory & Prototype</span></h2>
+                <h2 class="text-3xl font-bold mb-6">A Community of <span class="text-[#008080]">Student Builders</span></h2>
                 <div class="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Founded in January 2026, primarily by IIT Madras BS in Data Science students, CyphersNova is a collaborative, independent tech community focused on building, researching, and deploying projects.
                     </p>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        We're a community of students who believe the best way to learn technology is by building real things together. Our members come from diverse backgrounds but share a common passion: turning ideas into working projects while developing skills that matter in the real world.
+                    </p>
+                    <p class="text-sm italic border-l-4 border-[#008080] pl-4">
+                        Note: CyphersNova is currently independent of IITM or any other institution, giving us the flexibility to experiment and adapt to our members' needs.
                     </p>
                 </div>
             </div>
             <div class="glass aspect-video rounded-3xl border-2 border-dashed border-[#008080]/30 flex items-center justify-center text-[#008080] font-mono">
-                [Space for Campus Lab Photography]
+                [GitHub Collaboration Visualization]
             </div>
         </section>
 
+        <!-- How We Work Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">How We Work</h2>
+            <div class="glass p-8 rounded-3xl">
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    CyphersNova operates through dedicated GitHub repositories and collaborative WhatsApp groups. Each project or research track has its own team working together to solve real technical challenges.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#008080] text-xl">✓</span>
+                        <div>
+                            <strong>Hands-on learning</strong> through actual project work
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#008080] text-xl">✓</span>
+                        <div>
+                            <strong>Peer collaboration</strong> and knowledge sharing
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#008080] text-xl">✓</span>
+                        <div>
+                            <strong>Open documentation</strong> on GitHub
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-[#008080] text-xl">✓</span>
+                        <div>
+                            <strong>Consistent contribution</strong> over perfection
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active Projects Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Active Projects</h2>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+                Our current portfolio includes diverse technical initiatives, each offering unique learning opportunities
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass p-6 rounded-2xl project-card">
+                    <h3 class="font-bold text-lg mb-2 text-[#008080]">Optical Gesture Interaction</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Computer vision and human-computer interaction</p>
+                </div>
+                <div class="glass p-6 rounded-2xl project-card">
+                    <h3 class="font-bold text-lg mb-2 text-[#008080]">ML Traffic Threat Detection</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Machine learning, cybersecurity, network analysis</p>
+                </div>
+                <div class="glass p-6 rounded-2xl project-card">
+                    <h3 class="font-bold text-lg mb-2 text-[#008080]">CartPilot</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Indoor navigation, mobile development, retail tech</p>
+                </div>
+                <div class="glass p-6 rounded-2xl project-card">
+                    <h3 class="font-bold text-lg mb-2 text-[#008080]">WiFi Security Scanner</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Network security, penetration testing, tool development</p>
+                </div>
+                <div class="glass p-6 rounded-2xl project-card">
+                    <h3 class="font-bold text-lg mb-2 text-[#008080]">Autonomous Navigation</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Robotics, path planning, sensor integration</p>
+                </div>
+                <div class="glass p-6 rounded-2xl project-card">
+                    <h3 class="font-bold text-lg mb-2 text-[#008080]">Cryptography & Steganography</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Security research, encryption algorithms, data hiding</p>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 dark:text-gray-400 italic mt-6">
+                More projects are in development as members propose and champion new ideas.
+            </p>
+        </section>
+
+        <!-- What You'll Gain Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">What You'll Gain</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Hands-on Technical Experience</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Work with real technologies, frameworks, and tools on projects that solve actual problems</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Leadership & Team Coordination</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Learn to collaborate in distributed teams, manage project timelines, and coordinate with peers</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Professional Portfolio</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Build a documented body of work on GitHub that showcases your contributions and capabilities</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
+                    <h4 class="font-bold mb-2">Peer Network</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Connect with like-minded builders who share your interests and ambitions</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#008080] md:col-span-2">
+                    <h4 class="font-bold mb-2">Resume & LinkedIn Value</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Gain concrete achievements and skills you can articulate to employers and in applications</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Getting Started</h2>
+            <div class="glass p-8 rounded-3xl max-w-3xl mx-auto">
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    We welcome members at all skill levels. Whether you're just starting your coding journey or you have significant experience, there's a place for you at CyphersNova.
+                </p>
+                
+                <h3 class="font-bold text-xl mb-4 text-[#008080]">Project Difficulty Levels</h3>
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-start gap-3">
+                        <span class="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 px-3 py-1 rounded-full text-xs font-bold">Beginner</span>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 flex-1">Ideal for those new to coding or the specific technology. Strong mentorship and documentation provided.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-3 py-1 rounded-full text-xs font-bold">Intermediate</span>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 flex-1">Requires some familiarity with programming concepts. Good opportunities to deepen existing skills.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 px-3 py-1 rounded-full text-xs font-bold">Advanced</span>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 flex-1">Involves complex problem-solving and specialized knowledge. Excellent for challenging yourself.</p>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-xl mb-4 text-[#008080]">Your First Steps</h3>
+                <ol class="space-y-3 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-[#008080]">1.</span>
+                        <span><strong>Browse active projects</strong> and identify one or two that interest you</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-[#008080]">2.</span>
+                        <span><strong>Join the project's WhatsApp group</strong> and introduce yourself</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-[#008080]">3.</span>
+                        <span><strong>Check the GitHub repository</strong> for current tasks and documentation</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-[#008080]">4.</span>
+                        <span><strong>Start with a small contribution</strong> to familiarize yourself with the workflow</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="font-bold text-[#008080]">5.</span>
+                        <span><strong>Stay consistent</strong> with your contributions—regular small efforts compound into real progress</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Community Values Section -->
         <section class="mb-24">
-            <h3 class="text-center text-2xl font-bold mb-12">The Cypher Values</h3>
+            <h3 class="text-center text-2xl font-bold mb-12">Our Community Culture</h3>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+                CyphersNova thrives on collaboration, respect, and a growth mindset. We believe in:
+            </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
-                    <h4 class="font-bold mb-2">Open Collaboration</h4>
-                    <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+                    <h4 class="font-bold mb-2">Learning in Public</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">It's okay to not know everything. Ask questions, share your progress, and learn from others.</p>
                 </div>
                 <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
-                    <h4 class="font-bold mb-2">Iterative Design</h4>
-                    <p class="text-sm text-gray-500">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <h4 class="font-bold mb-2">Respectful Collaboration</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">We value diverse perspectives and constructive feedback. Disagreements are opportunities to learn.</p>
                 </div>
                 <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
-                    <h4 class="font-bold mb-2">Insti Integrity</h4>
-                    <p class="text-sm text-gray-500">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <h4 class="font-bold mb-2">Quality over Speed</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">We prioritize well-documented, thoughtful work over rushing to completion.</p>
                 </div>
                 <div class="glass p-6 rounded-2xl border-l-4 border-[#008080]">
-                    <h4 class="font-bold mb-2">Radical Impact</h4>
-                    <p class="text-sm text-gray-500">Excepteur sint occaecat cupidatat non proident sunt in culpa.</p>
+                    <h4 class="font-bold mb-2">Ownership & Accountability</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">When you commit to a task, your team counts on you. Communicate openly if priorities change.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Success Metrics Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">What Success Looks Like</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="font-bold text-xl mb-4 text-[#008080]">6-Month Goals</h3>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#008080]">•</span>
+                            <span>Ship at least 3 projects to a working prototype stage</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#008080]">•</span>
+                            <span>Grow to 50+ active contributors across all projects</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#008080]">•</span>
+                            <span>Establish clear project documentation and onboarding processes</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="font-bold text-xl mb-4 text-[#008080]">1-Year Goals</h3>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#008080]">•</span>
+                            <span>Deploy at least 2 projects in production or real-world testing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#008080]">•</span>
+                            <span>Have members successfully leverage CyphersNova work in job applications</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#008080]">•</span>
+                            <span>Develop a sustainable leadership rotation system</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="text-center py-16 mb-12">
+            <div class="glass p-12 rounded-3xl max-w-3xl mx-auto accent-glow">
+                <h2 class="text-3xl font-bold mb-4">Join Us</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-8">
+                    CyphersNova is more than a collection of projects—it's a community of builders learning together. If you're ready to move from consuming tutorials to creating real work, we'd love to have you.
+                </p>
+                <div class="space-y-2 mb-8">
+                    <p class="text-xl font-bold text-[#008080]">Come curious. Choose a project. Stay consistent.</p>
+                    <p class="text-xl font-bold text-[#008080]">And leave with work that you're proud of! ✨</p>
+                </div>
+                <button class="bg-[#008080] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#006666] transition">
+                    Connect with Us
+                </button>
             </div>
         </section>
     </main>
 
     <footer class="bg-[#002147] py-12 px-6 text-center text-white/60 text-sm">
-        <p>© 2024 CyphersNova • Indian Institute of Technology Madras</p>
+        <p>© 2026 CyphersNova • Independent Student Community</p>
     </footer>
 
     <script>
