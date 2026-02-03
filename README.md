@@ -7,7 +7,6 @@
 **Come curious. Choose a project. Stay consistent.**  
 **And leave with work that you're proud of! ✨**
 
-[![LinkedIn Org](https://img.shields.io/badge/LinkedIn-CyphersNova-008080?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/cyphersnova)
 [![Projects](https://img.shields.io/badge/Active_Projects-6+-008080?style=for-the-badge)](https://github.com/orgs/cyphersnova/repositories)
 [![Community](https://img.shields.io/badge/Join-Community-008080?style=for-the-badge)](https://github.com/cyphersnova)
 
@@ -64,7 +63,7 @@ Develop autonomous navigation systems for robotic platforms.
 **Difficulty:** 🔴 Advanced  
 Research and implement cryptographic and steganographic techniques.
 
-> 💡 **More projects are in development!** Have an idea? [Propose a new project](https://github.com/cyphersnova/project-proposals).
+> 💡 **More projects are in development!** Have an idea? [Propose a new project](https://forms.gle/5ThKvbm1gTy588kMA).
 
 ---
 
@@ -223,7 +222,7 @@ It varies by project and your goals. We value consistency over intensity—even 
 <details>
 <summary><b>Can I propose my own project idea?</b></summary>
 <br>
-Absolutely! Check out our <a href="https://github.com/cyphersnova/project-proposals">project proposals repository</a> to submit your idea. If it aligns with our mission and gets community support, we'll help you launch it.
+Absolutely! Check out our <a href="https://forms.gle/5ThKvbm1gTy588kMA">project initiation form</a> to submit your idea. If it aligns with our mission and gets community support, we'll help you launch it.
 </details>
 
 <details>
@@ -238,10 +237,9 @@ CyphersNova is currently independent of IITM or any other institution. This give
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-cyphersnova.tech-008080?style=for-the-badge)](https://cyphersnova.tech)
+[![Website](https://img.shields.io/badge/Website-cyphersnova-008080?style=for-the-badge)](https://cyphersnova.github.io/CyphersNova/)
 [![Discord](https://img.shields.io/badge/Discord-Join_Us-008080?style=for-the-badge&logo=discord)](https://discord.gg/cyphersnova)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-008080?style=for-the-badge&logo=linkedin)](https://linkedin.com/company/cyphersnova)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-008080?style=for-the-badge&logo=twitter)](https://twitter.com/cyphersnova)
 
 </div>
 
