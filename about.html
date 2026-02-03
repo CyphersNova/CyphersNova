@@ -53,10 +53,6 @@
             transform: translateY(-4px);
             box-shadow: 0 8px 30px rgba(0, 128, 128, 0.15);
         }
-        a:active {
-            color: #008080;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body class="bg-[#F5F5F5] text-[#002147] dark:bg-slate-900 dark:text-white min-h-screen">
@@ -66,9 +62,9 @@
             <span class="text-[#008080]">Cyphers</span>Nova
         </div>
         <div class="hidden md:flex gap-8 font-medium">
-            <a href="index.html" class="hover:text-[#008080] transition">Home</a>
-            <a href="about.html" active class="hover:text-[#008080]">About</a>
-            <a href="#" class="hover:text-[#008080] transition">Labs</a>
+            <a href="index.html" class="active:text-[#008080] hover:text-[#008080] transition">Home</a>
+            <a href="about.html" active class="active:text-[#008080] hover:text-[#008080]">About</a>
+            <a href="#" class="active:text-[#008080] hover:text-[#008080] transition">Labs</a>
         </div>
         <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">🌓</button>
     </nav>
@@ -367,5 +363,6 @@
     </script>
 </body>
 </html>
+
 
 
