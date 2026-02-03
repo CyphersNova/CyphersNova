@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![CyphersNova Banner](https://via.placeholder.com/1200x300/002147/008080?text=CyphersNova)
+![CyphersNova Banner](https://cyphersnova.github.io/CyphersNova/banner.png)
 
 **Come curious. Choose a project. Stay consistent.**  
 **And leave with work that you're proud of! ✨**
