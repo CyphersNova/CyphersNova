@@ -7,7 +7,7 @@
 **Come curious. Choose a project. Stay consistent.**  
 **And leave with work that you're proud of! ✨**
 
-[![LinkedIn Org](https://img.shields.io/badge/GitHub-CyphersNova-008080?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/cyphersnova)
+[![LinkedIn Org](https://img.shields.io/badge/LinkedIn-CyphersNova-008080?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/cyphersnova)
 [![Projects](https://img.shields.io/badge/Active_Projects-6+-008080?style=for-the-badge)](https://github.com/orgs/cyphersnova/repositories)
 [![Community](https://img.shields.io/badge/Join-Community-008080?style=for-the-badge)](https://github.com/cyphersnova)
 
