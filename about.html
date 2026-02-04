@@ -352,7 +352,8 @@
     </main>
 
     <footer class="bg-[#002147] py-12 px-6 text-center text-white/60 text-sm">
-        <p>© 2026 CyphersNova • Independent Student Community</p>
+<p> <abbr title=" CyphersNova is a registered trademark"> &#174; </abbr> <span id="year"></span> CyphersNova • Independent Student Community</p>
+
     </footer>
 
     <script>
@@ -360,6 +361,23 @@
         themeToggle.addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
         });
+        // Wait for the DOM to load before running the script
+document.addEventListener('DOMContentLoaded', function() {
+    // Create a new Date object to access current date/time information
+    const today = new Date();
+
+    // Get the current four-digit year
+    const currentYear = today.getFullYear();
+
+    // Find the HTML element with the id "year"
+    const yearElement = document.getElementById('year');
+
+    // Set the text content of the element to the current year
+    if (yearElement) { // Check if the element exists
+        yearElement.textContent = currentYear;
+    }
+});
+
     </script>
 </body>
 </html>
